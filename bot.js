@@ -56,7 +56,7 @@ function respond() {
   } 
   else if(request.text && botRegexSch.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/iron/schedule");
+    postMessage("http://www.daddyleagues.com/iron/schedules");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
