@@ -5,11 +5,11 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
+      botRegexAd = /^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
       botRegexWk = /^\/contacts/; botRegexCC = /^\/cc/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/; 
-      botRegexTrades = /^\/trades/;
+      botRegexTrades = /^\/trades/
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -100,6 +100,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://rmsl.freeforums.net/thread/85/rmsl-trading");
     this.res.end();
+  }
   else {
     console.log("don't care");
     this.res.writeHead(200);
