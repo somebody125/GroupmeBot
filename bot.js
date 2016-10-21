@@ -19,7 +19,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/som/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/rmsl/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -34,19 +34,19 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/som/rules");
+    postMessage("https://www.daddyleagues.com/rmsl/rules");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/som/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/rmsl/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/som/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/rmsl/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
 
@@ -67,7 +67,7 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/som/forum/topic/28916");
+    postMessage("http://rmsl.freeforums.net/board/2/contact-list");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) {
@@ -87,12 +87,12 @@ function respond() {
   }
   else if(request.text && botRegexFM.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/som/forum");
+    postMessage("http://rmsl.freeforums.net/");
     this.res.end();
   }
   else if(request.text && botRegexStandings.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/som/standings");
+    postMessage("http://daddyleagues.com/rmsl/standings");
     this.res.end();
   }
   else {
