@@ -34,7 +34,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/rmsl/rules");
+    postMessage("http://rmsl.freeforums.net/thread/4/rules");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
@@ -57,7 +57,7 @@ function respond() {
   } 
   else if(request.text && botRegexSch.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/rmsl/schedules");
+    postMessage("http://rmsl.freeforums.net/thread/537/rmsl-season-2-schedule");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
