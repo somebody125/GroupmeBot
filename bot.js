@@ -34,7 +34,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/som/rules");
+    postMessage("https://docs.google.com/document/d/1dPIAAVR-72g1lOEdlV4_5djb46ei9AkC1YPp_-rp_gU/edit?usp=sharing");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
@@ -87,7 +87,7 @@ function respond() {
   }
   else if(request.text && botRegexFM.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/som/forum");
+    postMessage("http://genericmaddenleague.proboards.com/");
     this.res.end();
   }
   else if(request.text && botRegexStandings.test(request.text)) {
