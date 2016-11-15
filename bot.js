@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
-      botRegexWk = /^\/users/; botRegexCC = /^\/cc/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/;
+      botRegexWk = /^\/users/; botRegexCC = /^\/trades/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -57,7 +57,7 @@ function respond() {
   } 
   else if(request.text && botRegexSch.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/som/schedules");
+    postMessage("https://www.google.com/");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -82,7 +82,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/851x1184.jpeg.330228901f684b0cb46cd1cef6953923");
+    postMessage("http://genericmaddenleague.proboards.com/board/7/trades-votes");
     this.res.end();
   }
   else if(request.text && botRegexFM.test(request.text)) {
