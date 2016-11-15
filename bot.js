@@ -96,7 +96,7 @@ function respond() {
     postMessage("http://daddyleagues.com/som/standings");
     this.res.end();
   }
-   else if(request.text && botRegextrades.test(request.text)) {
+   else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://genericmaddenleague.proboards.com/board/7/trades-votes");
     this.res.end();
