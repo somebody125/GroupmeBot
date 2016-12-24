@@ -35,7 +35,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1dPIAAVR-72g1lOEdlV4_5djb46ei9AkC1YPp_-rp_gU/edit?usp=sharing");
+    postMessage("https://www.daddyleagues.com/GML17/rules");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
