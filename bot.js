@@ -20,7 +20,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/gml17/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/MWO17/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -35,19 +35,19 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/GML17/rules");
+    postMessage("https://www.daddyleagues.com/MWO17/rules");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/gml17/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/MWO17/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/gml17/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/MWO17/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
 
@@ -58,7 +58,7 @@ function respond() {
   } 
   else if(request.text && botRegexSch.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/gml17/schedules");
+    postMessage("https://www.daddyleagues.com/MWO17/schedules");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -68,7 +68,7 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/gml17/forum/topic/28916");
+    postMessage("http://daddyleagues.com/MWO17/forum/topic/28916");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) {
@@ -93,7 +93,7 @@ function respond() {
   }
   else if(request.text && botRegexStandings.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/gml17/standings");
+    postMessage("http://daddyleagues.com/MWO17/standings");
     this.res.end();
   }
    else if(request.text && botRegexTrade.test(request.text)) {
