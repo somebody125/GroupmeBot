@@ -103,7 +103,7 @@ function respond() {
    }
   else if(request.text && botRegex4th.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/21762469_100730794007422_3429882240250323740_o.jpg?efg=eyJpIjoidCJ9&oh=b8deff5e6b9ba3131c208bfe565994f2&oe=5A591F1F");
     this.res.end();
   }
   else {
