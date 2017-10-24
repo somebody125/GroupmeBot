@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
       botRegexAd = /^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
-      botRegexWk = /^\/contacts/; botRegexStandings = /^\/standings/; botRegexTrades = /^\/trades/;
+      botRegexWk = /^\/contacts/; botRegexStandings = /^\/standings/; botRegexTrades = /^\/trades/; botRegex4th = /^\/4th/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -88,6 +88,11 @@ function respond() {
   else if(request.text && botRegexTrades.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://rmsl.freeforums.net/thread/85/rmsl-trading");
+    this.res.end();
+  }
+  else if(request.text && botRegex4th.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/LuYL3L0.png");
     this.res.end();
   }
   else {
