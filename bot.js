@@ -141,52 +141,52 @@ function respond() {
   }
    else if(request.text && botRegexWk6.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/anLut6E.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk7.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/VNfA6rk.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk8.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/Bn2qF9G.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk9.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/hJSCPLS.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk10.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/2rbqdUT.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk11.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/PSs2jHl.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk12.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/yKmTJHx.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk13.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/4APqnSU.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk14.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/MaISJth.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk15.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.imgur.com/H4aevEF.jpg");
     this.res.end();
   }
    else if(request.text && botRegexWk16.test(request.text)) {
