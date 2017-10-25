@@ -9,10 +9,10 @@ function respond() {
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
       botRegexWk = /^\/users/; botRegexCC = /^\/dn/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/; 
-      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexWk1 = /^\/Wk1/; botRegexWk2 = /^\/Wk2/;
-      botRegexWk3 = /^\/Wk3/; botRegexWk4 = /^\/Wk4/; botRegexWk5 = /^\/Wk5/; botRegexWk6 = /^\/Wk6/; botRegexWk7 = /^\/Wk7/;
-      botRegexWk8 = /^\/Wk8/; botRegexWk9 = /^\/Wk9/; botRegexWk10 = /^\/Wk10/; botRegexWk11 = /^\/Wk11/; botRegexWk12 = /^\/Wk12/; 
-      botRegexWk13 = /^\/Wk13/; botRegexWk14 = /^\/Wk14/; botRegexWk15 = /^\/Wk15/; botRegexWk16 = /^\/Wk16/; botRegexWk17 = /^\/Wk17/; 
+      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexWk1 = /^\/week1/; botRegexWk2 = /^\/week2/;
+      botRegexWk3 = /^\/week3/; botRegexWk4 = /^\/week4/; botRegexWk5 = /^\/week5/; botRegexWk6 = /^\/week6/; botRegexWk7 = /^\/week7/;
+      botRegexWk8 = /^\/week8/; botRegexWk9 = /^\/week9/; botRegexWk10 = /^\/week10/; botRegexWk11 = /^\/week11/; botRegexWk12 = /^\/week12/; 
+      botRegexWk13 = /^\/week13/; botRegexWk14 = /^\/week14/; botRegexWk15 = /^\/week15/; botRegexWk16 = /^\/week16/; botRegexWk17 = /^\/week17/; 
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
