@@ -9,7 +9,10 @@ function respond() {
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSch = /^\/schedule/; botRegexSh = /^\/shrug/;
       botRegexWk = /^\/users/; botRegexCC = /^\/dn/; botRegexFM = /^\/forum/; botRegexStandings = /^\/standings/; 
-      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/;
+      botRegexTrade = /^\/trades/; botRegex4th = /^\/4th/; botRegexBills = /^\/bills/; botRegexWk1 = /^\/Wk1/; botRegexWk2 = /^\/Wk2/;
+      botRegexWk3 = /^\/Wk3/; botRegexWk4 = /^\/Wk4/; botRegexWk5 = /^\/Wk5/; botRegexWk6 = /^\/Wk6/; botRegexWk7 = /^\/Wk7/;
+      botRegexWk8 = /^\/Wk8/; botRegexWk9 = /^\/Wk9/; botRegexWk10 = /^\/Wk10/; botRegexWk11 = /^\/Wk11/; botRegexWk12 = /^\/Wk12/; 
+      botRegexWk13 = /^\/Wk13/; botRegexWk14 = /^\/Wk14/; botRegexWk15 = /^\/Wk15/; botRegexWk16 = /^\/Wk16/; botRegexWk17 = /^\/Wk17/; 
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -109,6 +112,91 @@ function respond() {
   else if(request.text && botRegexBills.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/originals/86/17/b3/8617b31849eb39c59257e878533c9e1b.jpg");
+    this.res.end();
+  }
+  else if(request.text && botRegexWk1.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/iPVmPPS.jpg");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk3.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/LmRWMv6.jpg");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk4.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/teteDCL.jpg");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk5.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgur.com/DH0Ldur.jpg");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk6.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk7.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk8.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk9.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk10.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk11.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk12.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk13.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk14.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk15.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk16.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
+    this.res.end();
+  }
+   else if(request.text && botRegexWk17.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("");
     this.res.end();
   }
   else {
