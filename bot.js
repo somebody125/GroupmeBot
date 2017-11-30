@@ -61,7 +61,7 @@ function respond() {
   } 
   else if(request.text && botRegexSch.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/MWO18/schedules");
+    postMessage("http://www.espn.com/nfl/schedule/_/week/1");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
