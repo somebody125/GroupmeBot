@@ -38,7 +38,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://imgur.com/a/rKeYU");
+    postMessage("https://imgur.com/PZk42nx");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
@@ -106,7 +106,7 @@ function respond() {
    }
   else if(request.text && botRegex4th.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://imgur.com/gallery/CqIxJ");
+    postMessage("https://i.imgur.com/NJ961Ly.png");
     this.res.end(); 
   }
   else if(request.text && botRegexBills.test(request.text)) {
